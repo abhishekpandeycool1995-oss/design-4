@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mental Wellness Montclair — Therapy, Evaluations & Counseling in Montclair, NJ</title>
+<meta name="description" content="Compassionate therapy, psychological evaluations, and mental health support for children, teens, adults, and couples in Montclair, NJ. In-person & telehealth.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+<style>
+/* ===== RESET & BASE ===== */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{font-family:'DM Sans',-apple-system,sans-serif;font-size:16px;line-height:1.65;color:#2C2C2C;background:#F8F5F0;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+.container{max-width:1160px;margin:0 auto;padding:0 24px}
+
+/* ===== TYPOGRAPHY ===== */
+h1,h2,h3,h4{font-family:'Playfair Display',serif;font-weight:600;line-height:1.2;color:#1A3A3A}
+h1{font-size:clamp(2.2rem,4.5vw,3.5rem);letter-spacing:-0.03em}
+h2{font-size:clamp(1.6rem,3vw,2.4rem);letter-spacing:-0.02em;margin-bottom:16px}
+h3{font-size:1.2rem;margin-bottom:8px}
+.italic{font-style:italic;font-weight:500}
+.tag{font-family:'DM Sans',sans-serif;font-size:0.75rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#C97B63;margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.tag::before{content:'';width:24px;height:2px;background:#C97B63;display:inline-block}
+.text-muted{color:#6B6B6B;font-size:0.95rem;line-height:1.7}
+.text-center{text-align:center}
+
+/* ===== BUTTONS ===== */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:'DM Sans',sans-serif;font-size:0.9rem;font-weight:600;padding:14px 30px;border-radius:8px;border:none;cursor:pointer;transition:all .25s ease;white-space:nowrap}
+.btn-primary{background:#C97B63;color:#fff}
+.btn-primary:hover{background:#B56A52;transform:translateY(-2px);box-shadow:0 6px 20px rgba(201,123,99,0.3)}
+.btn-secondary{background:#1A3A3A;color:#fff}
+.btn-secondary:hover{background:#2A4A4A;transform:translateY(-2px);box-shadow:0 6px 20px rgba(26,58,58,0.25)}
+.btn-outline{background:transparent;color:#1A3A3A;border:2px solid #D4C9BD}
+.btn-outline:hover{background:#1A3A3A;color:#fff;border-color:#1A3A3A}
+.btn-outline-light{background:transparent;color:#fff;border:2px solid rgba(255,255,255,0.3)}
+.btn-outline-light:hover{background:rgba(255,255,255,0.1);border-color:#fff}
+.btn-sm{padding:10px 20px;font-size:0.8rem}
+.btn-lg{padding:16px 36px;font-size:1rem}
+
+/* ===== HEADER ===== */
+.header{position:sticky;top:0;z-index:100;background:rgba(248,245,240,0.97);border-bottom:1px solid #E8E0D8;backdrop-filter:blur(12px)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;height:76px}
+.header-left{display:flex;align-items:center;gap:40px}
+.header-logo{display:flex;align-items:center;gap:10px}
+.header-logo-img{width:auto;height:36px}
+.header-logo-text{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:600;color:#1A3A3A;line-height:1.1}
+.header-logo-text span{font-family:'DM Sans',sans-serif;font-size:0.6rem;font-weight:400;color:#8A7A6A;letter-spacing:0.04em;display:block}
+.header-nav{display:flex;align-items:center;gap:28px}
+.header-nav a{font-size:0.85rem;font-weight:500;color:#4A4A4A;transition:color .2s;position:relative}
+.header-nav a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:#C97B63;transition:width .2s}
+.header-nav a:hover{color:#C97B63}
+.header-nav a:hover::after{width:100%}
+.header-right{display:flex;align-items:center;gap:20px}
+.header-phone{font-size:0.85rem;font-weight:600;color:#1A3A3A;display:flex;align-items:center;gap:6px}
+.header-phone svg{width:14px;height:14px;color:#C97B63}
+.mobile-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:6px;z-index:101}
+.mobile-toggle span{width:26px;height:2px;background:#1A3A3A;border-radius:2px;transition:.3s}
+
+/* ===== HERO ===== */
+.hero{min-height:90vh;display:flex;align-items:center;position:relative;overflow:hidden;padding:40px 0 80px}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-bg .shape{position:absolute;border-radius:50%}
+.hero-bg .shape-1{width:600px;height:600px;background:radial-gradient(circle,rgba(201,123,99,0.08) 0%,transparent 70%);top:-200px;right:-100px}
+.hero-bg .shape-2{width:400px;height:400px;background:radial-gradient(circle,rgba(26,58,58,0.05) 0%,transparent 70%);bottom:-100px;left:-100px}
+.hero-bg .shape-3{width:200px;height:200px;background:radial-gradient(circle,rgba(201,123,99,0.05) 0%,transparent 70%);top:50%;left:40%}
+.hero-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:60px;align-items:center;position:relative;z-index:1}
+.hero h1{color:#1A3A3A;margin-bottom:18px}
+.hero h1 .italic{color:#C97B63}
+.hero-lead{font-size:1.1rem;color:#5A5A5A;margin-bottom:28px;max-width:500px;line-height:1.7}
+.hero-benefits{display:grid;gap:10px;margin-bottom:32px}
+.hero-benefits li{list-style:none;display:flex;align-items:center;gap:10px;font-size:0.9rem;color:#4A4A4A}
+.hero-benefits li svg{flex-shrink:0;width:18px;height:18px;color:#C97B63}
+.hero-actions{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.hero-rating{display:inline-flex;align-items:center;gap:14px;margin-top:28px;padding:12px 20px;background:#fff;border-radius:10px;box-shadow:0 2px 12px rgba(0,0,0,0.04);border:1px solid #EDE6DE;font-size:0.85rem}
+.hero-rating .stars{color:#E8A838;font-size:0.95rem;letter-spacing:2px}
+.hero-rating strong{color:#1A3A3A}
+.hero-rating span{color:#8A7A6A}
+.hero-image{position:relative;border-radius:16px;overflow:hidden;box-shadow:0 20px 60px rgba(26,58,58,0.08)}
+.hero-image img{width:100%;height:520px;object-fit:cover}
+.hero-image-badge{position:absolute;bottom:20px;left:20px;background:#fff;border-radius:10px;padding:12px 20px;box-shadow:0 4px 16px rgba(0,0,0,0.06);display:flex;align-items:center;gap:8px;font-size:0.8rem;color:#1A3A3A;font-weight:500}
+.hero-image-badge svg{color:#C97B63;flex-shrink:0}
+
+/* ===== TRUST BAR ===== */
+.trust-bar{background:#1A3A3A;padding:28px 0;color:#fff}
+.trust-bar-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px 32px}
+.trust-item{display:flex;align-items:center;gap:10px;font-size:0.82rem;color:rgba(255,255,255,0.7)}
+.trust-item svg{width:18px;height:18px;color:#C97B63;flex-shrink:0}
+.trust-item strong{color:#fff;display:block;font-size:0.88rem;font-weight:600}
+
+/* ===== SECTION ===== */
+.section{padding:100px 0}
+.section-alt{background:#fff}
+.section-divider{background:#F0EBE5}
+
+/* ===== ABOUT ===== */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.about-visual{position:relative}
+.about-image-main{border-radius:14px;overflow:hidden;box-shadow:0 12px 40px rgba(26,58,58,0.06)}
+.about-image-main img{width:100%;height:460px;object-fit:cover}
+.about-experience-badge{position:absolute;bottom:-20px;right:-20px;background:#C97B63;color:#fff;border-radius:14px;padding:24px 28px;text-align:center;box-shadow:0 8px 24px rgba(201,123,99,0.2)}
+.about-experience-badge .num{font-family:'Playfair Display',serif;font-size:2rem;font-weight:700;display:block;line-height:1}
+.about-experience-badge .label{font-size:0.7rem;font-weight:500;text-transform:uppercase;letter-spacing:0.04em;margin-top:4px}
+.about-content p{margin-bottom:16px;color:#5A5A5A}
+.about-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:32px;padding-top:28px;border-top:1px solid #E8E0D8}
+.about-stat{text-align:center}
+.about-stat-num{font-family:'Playfair Display',serif;font-size:1.8rem;font-weight:700;color:#C97B63}
+.about-stat-label{font-size:0.78rem;color:#8A7A6A;margin-top:4px}
+
+/* ===== WHY CHOOSE US ===== */
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:48px}
+.why-card{background:#fff;border-radius:12px;padding:32px 24px;border:1px solid #EDE6DE;transition:all .3s ease;text-align:center}
+.why-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(26,58,58,0.06);border-color:#D4C9BD}
+.why-icon{width:52px;height:52px;background:rgba(201,123,99,0.1);border-radius:12px;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;color:#C97B63}
+.why-icon svg{width:24px;height:24px}
+.why-card h3{font-size:1.05rem;color:#1A3A3A;margin-bottom:6px}
+.why-card p{font-size:0.82rem;color:#6B6B6B;line-height:1.6}
+
+/* ===== SERVICES ===== */
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:48px}
+.service-card{background:#F8F5F0;border-radius:12px;padding:32px 28px;border:1px solid #EDE6DE;transition:all .3s ease}
+.service-card:hover{background:#fff;border-color:#C97B63;transform:translateY(-3px);box-shadow:0 12px 32px rgba(201,123,99,0.08)}
+.service-icon{width:48px;height:48px;background:rgba(26,58,58,0.08);border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:18px;color:#1A3A3A}
+.service-icon svg{width:22px;height:22px}
+.service-card h3{font-size:1.1rem;color:#1A3A3A;margin-bottom:8px}
+.service-card p{font-size:0.87rem;color:#6B6B6B;line-height:1.6;margin-bottom:16px}
+.service-link{font-size:0.85rem;font-weight:600;color:#C97B63;display:inline-flex;align-items:center;gap:4px;transition:gap .2s}
+.service-link:hover{gap:8px}
+
+/* ===== CONDITIONS ===== */
+.conditions-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:48px}
+.condition-card{background:#fff;border-radius:10px;padding:20px 16px;border:1px solid #EDE6DE;display:flex;align-items:center;gap:12px;transition:all .25s;cursor:pointer}
+.condition-card:hover{border-color:#C97B63;background:#FFFCF9;transform:translateY(-2px);box-shadow:0 4px 12px rgba(201,123,99,0.06)}
+.condition-dot{width:8px;height:8px;border-radius:50%;background:#C97B63;flex-shrink:0}
+.condition-card span{font-size:0.85rem;font-weight:500;color:#4A4A4A}
+
+/* ===== HOW IT WORKS ===== */
+.how-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:48px;position:relative}
+.how-step{text-align:center;padding:36px 20px;position:relative}
+.how-step:not(:last-child)::after{content:'';position:absolute;top:36px;right:-12px;width:24px;height:2px;background:linear-gradient(to right,#D4C9BD,transparent)}
+.how-num{width:56px;height:56px;border-radius:50%;background:#1A3A3A;color:#fff;font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:600;display:flex;align-items:center;justify-content:center;margin:0 auto 18px;position:relative}
+.how-num::after{content:'';position:absolute;inset:-4px;border-radius:50%;border:2px dashed rgba(26,58,58,0.15)}
+.how-step h3{color:#1A3A3A;margin-bottom:8px;font-size:1.05rem}
+.how-step p{font-size:0.85rem;color:#6B6B6B;line-height:1.6;max-width:220px;margin:0 auto}
+
+/* ===== TEAM ===== */
+.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:48px}
+.team-card{background:#fff;border-radius:14px;overflow:hidden;border:1px solid #EDE6DE;transition:all .3s}
+.team-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(26,58,58,0.06)}
+.team-img{width:100%;height:280px;object-fit:cover}
+.team-info{padding:24px}
+.team-info h3{color:#1A3A3A;font-size:1.1rem}
+.team-role{font-size:0.8rem;color:#C97B63;font-weight:500;margin-bottom:10px}
+.team-bio{font-size:0.82rem;color:#6B6B6B;line-height:1.6}
+
+/* ===== TESTIMONIALS ===== */
+.testimonials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+.testimonial-card{background:#fff;border-radius:14px;padding:32px;border:1px solid #EDE6DE;transition:box-shadow .3s}
+.testimonial-card:hover{box-shadow:0 8px 28px rgba(0,0,0,0.04)}
+.testimonial-card .stars{color:#E8A838;font-size:0.9rem;letter-spacing:2px;margin-bottom:14px}
+.testimonial-card blockquote{font-size:0.9rem;color:#4A4A4A;line-height:1.7;margin-bottom:20px;font-style:italic}
+.testimonial-author{display:flex;align-items:center;gap:12px}
+.testimonial-avatar{width:44px;height:44px;border-radius:50%;background:#1A3A3A;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:0.85rem;flex-shrink:0}
+.testimonial-name{font-weight:600;font-size:0.88rem;color:#1A3A3A}
+.testimonial-source{font-size:0.75rem;color:#8A7A6A}
+
+/* ===== INSURANCE ===== */
+.insurance-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-top:48px}
+.insurance-info p{color:#5A5A5A;margin-bottom:20px}
+.insurance-logos{display:flex;flex-wrap:wrap;gap:16px}
+.insurance-logo{background:#fff;border:1px solid #EDE6DE;border-radius:8px;padding:12px 18px;font-size:0.75rem;font-weight:600;color:#4A4A4A;transition:all .2s}
+.insurance-logo:hover{border-color:#C97B63;color:#C97B63}
+.insurance-cta{margin-top:24px}
+
+/* ===== FAQ ===== */
+.faq-list{max-width:720px;margin:48px auto 0}
+.faq-item{border-bottom:1px solid #E8E0D8;padding:0}
+.faq-question{width:100%;text-align:left;padding:20px 0;background:none;border:none;font-family:'DM Sans',sans-serif;font-size:0.95rem;font-weight:600;color:#1A3A3A;cursor:pointer;display:flex;justify-content:space-between;align-items:center;transition:color .2s}
+.faq-question:hover{color:#C97B63}
+.faq-question svg{width:18px;height:18px;flex-shrink:0;transition:transform .3s;color:#C97B63}
+.faq-question.active svg{transform:rotate(45deg)}
+.faq-answer{padding:0 0 20px;display:none;font-size:0.9rem;color:#6B6B6B;line-height:1.7}
+.faq-answer.open{display:block}
+
+/* ===== BLOG ===== */
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+.blog-card{border-radius:12px;overflow:hidden;border:1px solid #EDE6DE;background:#fff;transition:all .3s}
+.blog-card:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(26,58,58,0.06)}
+.blog-img{width:100%;height:200px;object-fit:cover}
+.blog-body{padding:24px}
+.blog-tag{font-size:0.7rem;font-weight:600;color:#C97B63;text-transform:uppercase;letter-spacing:0.06em;margin-bottom:8px}
+.blog-body h3{font-size:1rem;margin-bottom:8px}
+.blog-body p{font-size:0.82rem;color:#6B6B6B;line-height:1.6;margin-bottom:12px}
+.blog-meta{font-size:0.75rem;color:#8A7A6A}
+
+/* ===== LOCATION ===== */
+.location-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-top:48px}
+.location-images{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.location-images img{width:100%;height:200px;object-fit:cover;border-radius:10px}
+.location-images img:first-child{grid-column:1/-1;height:260px}
+.location-info h3{margin-bottom:12px;color:#1A3A3A;font-size:1.2rem}
+.location-info p{font-size:0.9rem;color:#5A5A5A;margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.location-info p svg{width:16px;height:16px;color:#C97B63;flex-shrink:0}
+.location-hours{margin-top:16px;padding-top:16px;border-top:1px solid #E8E0D8}
+.location-hours strong{color:#1A3A3A}
+
+/* ===== CTA ===== */
+.cta-section{background:#1A3A3A;color:#fff;padding:80px 0;text-align:center;position:relative;overflow:hidden}
+.cta-section::before{content:'';position:absolute;top:-50%;left:-30%;width:800px;height:800px;background:radial-gradient(circle,rgba(201,123,99,0.08) 0%,transparent 70%);border-radius:50%}
+.cta-section h2{color:#fff;margin-bottom:16px;position:relative}
+.cta-section p{font-size:1.05rem;color:rgba(255,255,255,0.7);margin-bottom:32px;max-width:500px;margin-left:auto;margin-right:auto;position:relative}
+.cta-actions{display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap;position:relative}
+.cta-phone{display:block;margin-top:16px;font-size:0.9rem;color:rgba(255,255,255,0.5);position:relative}
+.cta-phone a{color:#fff;font-weight:600}
+
+/* ===== FOOTER ===== */
+.footer{background:#1A1A1A;color:rgba(255,255,255,0.6);padding:64px 0 32px}
+.footer-inner{display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr;gap:40px}
+.footer-brand p{font-size:0.85rem;line-height:1.7;margin-top:16px;max-width:300px}
+.footer h4{color:#fff;font-family:'DM Sans',sans-serif;font-size:0.8rem;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;margin-bottom:20px}
+.footer ul{list-style:none}
+.footer ul li{margin-bottom:10px}
+.footer ul a{font-size:0.85rem;color:rgba(255,255,255,0.5);transition:color .2s}
+.footer ul a:hover{color:#fff}
+.footer-contact-item{font-size:0.85rem;margin-bottom:12px;line-height:1.6}
+.footer-contact-item strong{color:#fff;display:block}
+.footer-social{display:flex;gap:10px;margin-top:16px}
+.footer-social a{width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,0.12);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.4);transition:all .2s;font-size:0.75rem;font-weight:600}
+.footer-social a:hover{background:rgba(255,255,255,0.08);color:#fff;border-color:rgba(255,255,255,0.3)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.06);margin-top:48px;padding-top:24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;font-size:0.8rem;color:rgba(255,255,255,0.4)}
+.footer-bottom-links{display:flex;gap:20px;flex-wrap:wrap}
+.footer-bottom-links a{color:rgba(255,255,255,0.4);transition:color .2s}
+.footer-bottom-links a:hover{color:#fff}
+
+/* ===== SECTION HEADER ===== */
+.section-header{text-align:center;max-width:640px;margin:0 auto}
+.section-header h2{margin-bottom:12px}
+.section-header p{color:#6B6B6B;font-size:1rem;line-height:1.7}
+
+/* ===== MOBILE NAV ===== */
+@media(max-width:1024px){
+.hero-grid{grid-template-columns:1fr;gap:40px}
+.hero{min-height:auto;padding:60px 0}
+.hero-image img{height:380px}
+.about-grid{grid-template-columns:1fr;gap:40px}
+.about-image-main img{height:340px}
+.why-grid,.conditions-grid{grid-template-columns:repeat(2,1fr)}
+.services-grid,.team-grid,.testimonials-grid,.blog-grid{grid-template-columns:repeat(2,1fr)}
+.how-grid{grid-template-columns:repeat(2,1fr)}
+.how-step:nth-child(2)::after{display:none}
+.insurance-grid,.location-grid{grid-template-columns:1fr;gap:40px}
+.footer-inner{grid-template-columns:1fr 1fr}
+}
+@media(max-width:768px){
+.header-nav{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(248,245,240,0.98);backdrop-filter:blur(20px);flex-direction:column;justify-content:center;align-items:center;gap:24px;z-index:100;display:none;opacity:0;transition:opacity .3s}
+.header-nav.active{display:flex;opacity:1}
+.header-nav a{font-size:1.3rem}
+.header-right .btn,.header-right .header-phone{display:none}
+.mobile-toggle{display:flex}
+.mobile-toggle.active span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.mobile-toggle.active span:nth-child(2){opacity:0}
+.mobile-toggle.active span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+.hero-grid{gap:28px}
+.hero-image img{height:280px}
+.about-experience-badge{right:10px;bottom:-10px;padding:16px 20px}
+.about-experience-badge .num{font-size:1.4rem}
+.why-grid,.conditions-grid{grid-template-columns:repeat(2,1fr)}
+.services-grid,.team-grid,.testimonials-grid,.blog-grid{grid-template-columns:1fr}
+.how-grid{grid-template-columns:1fr}
+.how-step::after{display:none}
+.section{padding:64px 0}
+.section-header{text-align:left}
+.footer-inner{grid-template-columns:1fr}
+.footer-bottom{flex-direction:column;text-align:center}
+.hero-rating{flex-wrap:wrap}
+.trust-bar-inner{justify-content:center;text-align:center}
+.trust-item{flex-direction:column;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="header">
+<div class="container header-inner">
+<div class="header-left">
+<a class="header-logo" href="#">
+<img class="header-logo-img" src="https://images.squarespace-cdn.com/content/v1/66216f94dfe8723da63df6a2/674a2555-d4e5-4001-9f84-7f2f434a1167/MentalWellnessMontclair_Final+%281%29_White.png?format=300w" alt="Mental Wellness Montclair" onerror="this.style.display='none'">
+<div class="header-logo-text">Mental Wellness Montclair<span>Montclair, NJ</span></div>
+</a>
+<nav class="header-nav" id="mainNav">
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#team">Our Team</a>
+<a href="#process">How It Works</a>
+<a href="#resources">Resources</a>
+<a href="#contact">Contact</a>
+</nav>
+</div>
+<div class="header-right">
+<a class="header-phone" href="tel:+19732107310">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+(973) 210-7310
+</a>
+<a class="btn btn-primary btn-sm" href="#book">Book Appointment</a>
+</div>
+<button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+<span></span><span></span><span></span>
+</button>
+</div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+<div class="hero-bg">
+<div class="shape shape-1"></div>
+<div class="shape shape-2"></div>
+<div class="shape shape-3"></div>
+</div>
+<div class="container hero-grid">
+<div class="hero-content">
+<div class="tag">Montclair's Trusted Therapy Practice</div>
+<h1>Therapy & Evaluations to Help You <span class="italic">Build a Stronger Relationship</span> With Yourself</h1>
+<p class="hero-lead">A safe, supportive space to be heard, gain clarity, and move forward with confidence. In-person in Montclair or online.</p>
+<ul class="hero-benefits">
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Same-week appointments available</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><path d="M9 14l2 2 4-4"/></svg> ADHD evaluations — testing, answers, and ongoing support</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> In-person in Montclair or online — your choice</li>
+</ul>
+<div class="hero-actions">
+<a class="btn btn-primary btn-lg" href="#book">Book Your Appointment</a>
+<a class="btn btn-outline btn-lg" href="tel:+19732107310">(973) 210-7310</a>
+</div>
+<div class="hero-rating">
+<span class="stars">★★★★★</span>
+<div><strong>5.0</strong> <span>Rated by 80+ clients on Google</span></div>
+</div>
+</div>
+<div class="hero-image">
+<img src="https://images.squarespace-cdn.com/content/v1/66216f94dfe8723da63df6a2/72754a70-0032-4ccd-ab54-59f558d26610/priscilla-du-preez-nF8xhLMmg0c-unsplash.jpg" alt="Calm and welcoming therapy office space" loading="eager">
+<div class="hero-image-badge">
+<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+Serving Montclair & All of New Jersey
+</div>
+</div>
+</div>
+</section>
+
+<!-- ===== TRUST BAR ===== -->
+<section class="trust-bar">
+<div class="container trust-bar-inner">
+<div class="trust-item">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+<div><strong>Evening Appointments</strong>Mon–Fri until 8PM</div>
+</div>
+<div class="trust-item">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/></svg>
+<div><strong>Weekend Availability</strong>Saturdays 8AM–4PM</div>
+</div>
+<div class="trust-item">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"/><line x1="7" y1="2" x2="7" y2="6"/><line x1="17" y1="2" x2="17" y2="6"/><line x1="2" y1="12" x2="22" y2="12"/></svg>
+<div><strong>In-Person & Telehealth</strong>Choose what works for you</div>
+</div>
+<div class="trust-item">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+<div><strong>5.0 ★ Rated</strong>Trusted by 80+ clients</div>
+</div>
+</div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about" class="section">
+<div class="container about-grid">
+<div class="about-visual">
+<div class="about-image-main">
+<img src="https://images.squarespace-cdn.com/content/v1/66216f94dfe8723da63df6a2/7b2a1d7a-3db4-41b1-86cb-b283f49f1aaf/IMG_7531.jpeg" alt="Mental Wellness Montclair therapy office" loading="lazy">
+</div>
+<div class="about-experience-badge">
+<span class="num">10+</span>
+<span class="label">Years of Experience</span>
+</div>
+</div>
+<div class="about-content">
+<div class="tag">About Our Practice</div>
+<h2>A <span class="italic">Whole-Person Approach</span> to Mental Wellness</h2>
+<p>At Mental Wellness Montclair, we believe in looking at the <strong>whole person</strong> as we help you meet your goals. We are a dedicated therapy office committed to offering support to individuals, couples, and families within our community.</p>
+<p>Our mission is to create a nurturing environment where clients can freely express themselves and foster personal development. We take a whole-person approach to care, focusing on your goals, experiences, and emotional well-being in a welcoming environment designed for open conversation and meaningful progress.</p>
+<p>With office hours of <strong>Monday–Friday 8AM–8PM</strong> and <strong>Saturdays 8AM–4PM</strong>, we are here to assist you when you need us most.</p>
+<div class="about-stats">
+<div class="about-stat">
+<div class="about-stat-num">500+</div>
+<div class="about-stat-label">Clients Supported</div>
+</div>
+<div class="about-stat">
+<div class="about-stat-num">10+</div>
+<div class="about-stat-label">Years in Practice</div>
+</div>
+<div class="about-stat">
+<div class="about-stat-num">5.0★</div>
+<div class="about-stat-label">Google Rating</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ===== WHY CHOOSE US ===== -->
+<section class="section section-alt">
+<div class="container">
+<div class="section-header">
+<div class="tag" style="justify-content:center">Why Choose Us</div>
+<h2>What Sets <span class="italic">Mental Wellness Montclair</span> Apart</h2>
+<p>We provide compassionate, individualized care designed to help you feel understood, supported, and empowered as you move through life's challenges and goals.</p>
+</div>
+<div class="why-grid">
+<div class="why-card">
+<div class="why-icon">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+</div>
+<h3>5.0 ★ Rated Practice</h3>
+<p>Trusted by 80+ clients for compassionate care, attentive providers, and a supportive experience.</p>
+</div>
+<div class="why-card">
+<div class="why-icon">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+</div>
+<h3>Safe, Supportive Space</h3>
+<p>You'll be met with warmth, respect, and understanding in an environment where you can speak openly.</p>
+</div>
+<div class="why-card">
+<div class="why-icon">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 1 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+</div>
+<h3>Care That Reflects You</h3>
+<p>Your experiences and goals guide the process. We tailor each session to what matters most to you.</p>
+</div>
+<div class="why-card">
+<div class="why-icon">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+</div>
+<h3>Flexible, Accessible Care</h3>
+<p>In-person and telehealth options with evening and weekend availability to fit your life.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section id="services" class="section">
+<div class="container">
+<div class="section-header">
+<div class="tag" style="justify-content:center">Our Services</div>
+<h2>Therapy Services <span class="italic">for Every Stage</span> of Life</h2>
+<p>We offer a range of therapy options designed to support individuals, couples, and families. Each service is tailored to address specific needs while providing compassionate, personalized care.</p>
+</div>
+<div class="services-grid">
+<div class="service-card">
+<div class="service-icon">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><path d="M9 14l2 2 4-4"/></svg>
+</div>
+<h3>ADD & ADHD Evaluations</h3>
+<p>Comprehensive assessments to better understand attention, focus, and behavioral concerns with clear recommendations for next steps.</p>
+<a class="service-link" href="#">Learn More →</a>
+</div>
+<div class="service-card">
+<div class="service-icon">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+</div>
+<h3>Child Therapy</h3>
+<p>Support children in navigating big emotions, behavioral challenges, and social adjustments through age-appropriate techniques.</p>
+<a class="service-link" href="#">Learn More →</a>
+</div>
+<div class="service-card">
+<div class="service-icon">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+</div>
+<h3>Teen Therapy</h3>
+<p>Support teens in navigating emotions, stress, and life changes while building confidence, coping skills, and healthier communication.</p>
+<a class="service-link" href="#">Learn More →</a>
+</div>
+<div class="service-card">
+<div class="service-icon">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+</div>
+<h3>Anxiety Therapy</h3>
+<p>Guidance for excessive worry, tension, and stress responses. Develop tools to live a life free from anxiety.</p>
+<a class="service-link" href="#">Learn More →</a>
+</div>
+<div class="service-card">
+<div class="service-icon">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 1 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+</div>
+<h3>Couples Therapy</h3>
+<p>Strengthen communication, improve understanding, and work through conflict in a safe, guided environment.</p>
+<a class="service-link" href="#">Learn More →</a>
+</div>
+<div class="service-card">
+<div class="service-icon">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+</div>
+<h3>Virtual Therapy</h3>
+<p>Convenient and secure online therapy sessions accessible from the comfort of your own space, anywhere in New Jersey.</p>
+<a class="service-link" href="#">Learn More →</a>
+</div>
+</div>
+<div style="text-align:center;margin-top:40px">
+<a class="btn btn-secondary" href="#">View All Services & Specialties</a>
+</div>
+</div>
+</section>
+
+<!-- ===== CONDITIONS WE TREAT ===== -->
+<section class="section section-divider">
+<div class="container">
+<div class="section-header">
+<div class="tag" style="justify-content:center">Conditions We Treat</div>
+<h2>Support for What <span class="italic">You're Facing</span></h2>
+<p>We help individuals, couples, and families navigate a wide range of mental health concerns with compassionate, evidence-based care.</p>
+</div>
+<div class="conditions-grid">
+<div class="condition-card"><span class="condition-dot"></span><span>ADHD / ADD</span></div>
+<div class="condition-card"><span class="condition-dot"></span><span>Anxiety</span></div>
+<div class="condition-card"><span class="condition-dot"></span><span>Depression</span></div>
+<div class="condition-card"><span class="condition-dot"></span><span>Grief & Loss</span></div>
+<div class="condition-card"><span class="condition-dot"></span><span>Life Transitions</span></div>
+<div class="condition-card"><span class="condition-dot"></span><span>OCD</span></div>
+<div class="condition-card"><span class="condition-dot"></span><span>Mood Disorders</span></div>
+<div class="condition-card"><span class="condition-dot"></span><span>Anger Management</span></div>
+<div class="condition-card"><span class="condition-dot"></span><span>Self-Esteem</span></div>
+<div class="condition-card"><span class="condition-dot"></span><span>Body Image</span></div>
+<div class="condition-card"><span class="condition-dot"></span><span>Codependency</span></div>
+<div class="condition-card"><span class="condition-dot"></span><span>Trauma</span></div>
+<div class="condition-card"><span class="condition-dot"></span><span>Parenting Support</span></div>
+<div class="condition-card"><span class="condition-dot"></span><span>College Students</span></div>
+<div class="condition-card"><span class="condition-dot"></span><span>LGBTQ+ Affirming</span></div>
+<div class="condition-card"><span class="condition-dot"></span><span>Stress Management</span></div>
+</div>
+</div>
+</section>
+
+<!-- ===== HOW IT WORKS ===== -->
+<section id="process" class="section">
+<div class="container">
+<div class="section-header">
+<div class="tag" style="justify-content:center">How It Works</div>
+<h2>4 Simple Steps to <span class="italic">Start Your Therapy</span> Journey</h2>
+<p>We make getting started simple. From your first call to ongoing care, every step is designed with your comfort in mind.</p>
+</div>
+<div class="how-grid">
+<div class="how-step">
+<div class="how-num">01</div>
+<h3>15-Minute Complimentary Consult</h3>
+<p>A free call to understand what you're going through and how we can help. No pressure, no commitment.</p>
+</div>
+<div class="how-step">
+<div class="how-num">02</div>
+<h3>Intake & Goal Setting</h3>
+<p>We take your pace, priorities, and goals into account to build a clear direction for your therapy journey.</p>
+</div>
+<div class="how-step">
+<div class="how-num">03</div>
+<h3>Ongoing Therapy Sessions</h3>
+<p>Weekly sessions in-person or online — a safe, non-judgmental space focused on connection and meaningful progress.</p>
+</div>
+<div class="how-step">
+<div class="how-num">04</div>
+<h3>Continuous Care</h3>
+<p>Consistent support with guidance to reflect, adjust, and move forward at your own pace with lasting growth.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ===== TEAM ===== -->
+<section id="team" class="section section-alt">
+<div class="container">
+<div class="section-header">
+<div class="tag" style="justify-content:center">Our Team</div>
+<h2>Meet Your <span class="italic">Therapists</span></h2>
+<p>Our dedicated team of licensed professionals is here to support you with compassion, expertise, and personalized care.</p>
+</div>
+<div class="team-grid">
+<div class="team-card">
+<img class="team-img" src="https://images.squarespace-cdn.com/content/v1/66216f94dfe8723da63df6a2/d8a7fabb-f556-44ff-8b3d-d0cb567d9e28/2024-04-12+%283%29.webp" alt="Clinical Team Member" loading="lazy">
+<div class="team-info">
+<h3>Our Clinical Team</h3>
+<div class="team-role">Licensed Therapists</div>
+<p class="team-bio">Our team of experienced, licensed clinicians specializes in working with children, teens, adults, and couples across a range of concerns.</p>
+</div>
+</div>
+<div class="team-card">
+<img class="team-img" src="https://images.squarespace-cdn.com/content/v1/66216f94dfe8723da63df6a2/bb8fea7c-e607-47ec-b3c0-f6c85ddf3885/MentalWellnessMontclair_FullWordmarkBadge_White.png" alt="Specialists" style="object-fit:contain;padding:40px;background:#1A3A3A" loading="lazy">
+<div class="team-info">
+<h3>Evaluation Specialists</h3>
+<div class="team-role">Psychological Testing</div>
+<p class="team-bio">Our evaluation team provides comprehensive psychological and psychoeducational assessments for ADHD, learning differences, and more.</p>
+</div>
+</div>
+<div class="team-card">
+<div style="height:280px;background:#F0EBE5;display:flex;align-items:center;justify-content:center;color:#8A7A6A;font-size:0.85rem;padding:20px;text-align:center">
+Support Staff Ready to Help You
+</div>
+<div class="team-info">
+<h3>Administrative Team</h3>
+<div class="team-role">Client Care Coordinators</div>
+<p class="team-bio">Our friendly administrative team is here to help with scheduling, insurance questions, and making sure your experience is seamless.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section id="testimonials" class="section">
+<div class="container">
+<div class="section-header">
+<div class="tag" style="justify-content:center">Testimonials</div>
+<h2>The <span class="italic">People and Stories</span> Behind Our Work</h2>
+<p>Every person's journey is unique. We're grateful for the opportunity to support our community.</p>
+</div>
+<div class="testimonials-grid">
+<div class="testimonial-card">
+<div class="stars">★★★★★</div>
+<blockquote>"The therapists made me feel heard and supported from the very first session. I've gained valuable tools to manage stress and improve my overall well-being."</blockquote>
+<div class="testimonial-author">
+<div class="testimonial-avatar">SM</div>
+<div>
+<div class="testimonial-name">Sarah M.</div>
+<div class="testimonial-source">Google Review</div>
+</div>
+</div>
+</div>
+<div class="testimonial-card">
+<div class="stars">★★★★★</div>
+<blockquote>"Compassionate, professional, and genuinely invested in my progress. The support I received helped me navigate a difficult period in my life."</blockquote>
+<div class="testimonial-author">
+<div class="testimonial-avatar">JR</div>
+<div>
+<div class="testimonial-name">James R.</div>
+<div class="testimonial-source">Google Review</div>
+</div>
+</div>
+</div>
+<div class="testimonial-card">
+<div class="stars">★★★★★</div>
+<blockquote>"The welcoming environment made it easy to open up and discuss my concerns. I feel more confident and equipped to handle life's challenges."</blockquote>
+<div class="testimonial-author">
+<div class="testimonial-avatar">ET</div>
+<div>
+<div class="testimonial-name">Emily T.</div>
+<div class="testimonial-source">Yelp Review</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ===== INSURANCE & FEES ===== -->
+<section class="section section-alt">
+<div class="container">
+<div class="section-header">
+<div class="tag" style="justify-content:center">Insurance & Fees</div>
+<h2>Quality Care <span class="italic">That's Accessible</span></h2>
+<p>We believe cost should never be a barrier to getting the support you need. We work with a variety of insurance plans and offer flexible payment options.</p>
+</div>
+<div class="insurance-grid">
+<div class="insurance-info">
+<p>We accept a range of major insurance plans and are happy to verify your benefits before your first visit. For those without insurance or who prefer not to use it, we offer competitive self-pay rates and can provide superbills for out-of-network reimbursement.</p>
+<p><strong>Don't see your plan?</strong> Contact us and we'll do our best to help.</p>
+<div class="insurance-logos">
+<span class="insurance-logo">Aetna</span>
+<span class="insurance-logo">Cigna</span>
+<span class="insurance-logo">Blue Cross</span>
+<span class="insurance-logo">UnitedHealthcare</span>
+<span class="insurance-logo">Optum</span>
+<span class="insurance-logo">Horizon BCBS</span>
+<span class="insurance-logo">Self-Pay</span>
+<span class="insurance-logo">Out-of-Network</span>
+</div>
+<div class="insurance-cta">
+<a class="btn btn-primary" href="#">Verify Your Insurance</a>
+</div>
+</div>
+<div style="background:#fff;border-radius:14px;padding:36px;border:1px solid #EDE6DE">
+<h3 style="font-size:1.2rem;margin-bottom:16px">Have Questions About Cost?</h3>
+<p style="font-size:0.88rem;color:#6B6B6B;line-height:1.7;margin-bottom:20px">We're transparent about fees and happy to discuss payment options. Your first 15-minute consultation is always free.</p>
+<div style="margin-bottom:16px;padding-bottom:16px;border-bottom:1px solid #EDE6DE">
+<div style="display:flex;justify-content:space-between;font-size:0.85rem;padding:6px 0"><span style="color:#6B6B6B">Free 15-min Consultation</span><strong style="color:#1A3A3A">$0</strong></div>
+<div style="display:flex;justify-content:space-between;font-size:0.85rem;padding:6px 0"><span style="color:#6B6B6B">Intake Session</span><strong style="color:#1A3A3A">Varies by insurance</strong></div>
+<div style="display:flex;justify-content:space-between;font-size:0.85rem;padding:6px 0"><span style="color:#6B6B6B">Therapy Session (50 min)</span><strong style="color:#1A3A3A">Varies by insurance</strong></div>
+<div style="display:flex;justify-content:space-between;font-size:0.85rem;padding:6px 0"><span style="color:#6B6B6B">ADHD Evaluation</span><strong style="color:#1A3A3A">Contact for details</strong></div>
+</div>
+<a class="btn btn-secondary" href="tel:+19732107310">Call (973) 210-7310</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="section section-divider">
+<div class="container">
+<div class="section-header">
+<div class="tag" style="justify-content:center">FAQs</div>
+<h2>Common Questions <span class="italic">About Getting Started</span></h2>
+<p>We know reaching out can feel daunting. Here are answers to some of the most common questions we hear.</p>
+</div>
+<div class="faq-list">
+<div class="faq-item">
+<button class="faq-question" onclick="toggleFAQ(this)">
+What should I expect in my first session?
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+</button>
+<div class="faq-answer">Your first session is a safe, supportive conversation. We'll discuss what brings you in, your goals, and any questions you have. There's no pressure to share more than you're comfortable with — therapy moves at your pace.</div>
+</div>
+<div class="faq-item">
+<button class="faq-question" onclick="toggleFAQ(this)">
+Do you accept insurance?
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+</button>
+<div class="faq-answer">Yes, we accept a range of major insurance plans including Aetna, Cigna, Blue Cross, UnitedHealthcare, Optum, and Horizon BCBS. Contact us to verify your specific plan benefits.</div>
+</div>
+<div class="faq-item">
+<button class="faq-question" onclick="toggleFAQ(this)">
+How do I book an appointment?
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+</button>
+<div class="faq-answer">You can book directly through our online booking system, call us at (973) 210-7310, or fill out our contact form. We'll get back to you within 24 hours to confirm your appointment.</div>
+</div>
+<div class="faq-item">
+<button class="faq-question" onclick="toggleFAQ(this)">
+Is online therapy as effective as in-person?
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+</button>
+<div class="faq-answer">Yes, research shows that telehealth therapy is as effective as in-person sessions for most concerns. Many clients appreciate the convenience and comfort of attending from home.</div>
+</div>
+<div class="faq-item">
+<button class="faq-question" onclick="toggleFAQ(this)">
+How long does therapy typically last?
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+</button>
+<div class="faq-answer">The duration of therapy varies based on your individual needs and goals. Some clients find benefit in short-term therapy (8–12 sessions), while others engage in longer-term work. We'll discuss what's right for you.</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ===== BLOG / RESOURCES ===== -->
+<section id="resources" class="section">
+<div class="container">
+<div class="section-header">
+<div class="tag" style="justify-content:center">Resources</div>
+<h2>Insights & <span class="italic">Guidance</span> From Our Team</h2>
+<p>Explore our blog for articles on mental health, wellness tips, and guidance for navigating life's challenges.</p>
+</div>
+<div class="blog-grid">
+<div class="blog-card">
+<img class="blog-img" src="https://images.squarespace-cdn.com/content/v1/66216f94dfe8723da63df6a2/bb8fea7c-e607-47ec-b3c0-f6c85ddf3885/MentalWellnessMontclair_FullWordmarkBadge_White.png" alt="Understanding ADHD" style="object-fit:contain;padding:32px;background:#1A3A3A" loading="lazy">
+<div class="blog-body">
+<div class="blog-tag">ADHD</div>
+<h3>Understanding ADHD in Adults: Signs, Diagnosis & Next Steps</h3>
+<p>Learn about the common signs of adult ADHD, what to expect during an evaluation, and how to move forward.</p>
+<div class="blog-meta">June 2026 · 5 min read</div>
+</div>
+</div>
+<div class="blog-card">
+<img class="blog-img" src="https://images.squarespace-cdn.com/content/v1/66216f94dfe8723da63df6a2/72754a70-0032-4ccd-ab54-59f558d26610/priscilla-du-preez-nF8xhLMmg0c-unsplash.jpg" alt="Anxiety management" style="object-fit:cover" loading="lazy">
+<div class="blog-body">
+<div class="blog-tag">Anxiety</div>
+<h3>5 Evidence-Based Strategies for Managing Anxiety</h3>
+<p>Practical, research-backed techniques to help you cope with anxiety and regain a sense of calm in your daily life.</p>
+<div class="blog-meta">May 2026 · 4 min read</div>
+</div>
+</div>
+<div class="blog-card">
+<img class="blog-img" src="https://images.squarespace-cdn.com/content/v1/66216f94dfe8723da63df6a2/7b2a1d7a-3db4-41b1-86cb-b283f49f1aaf/IMG_7531.jpeg" alt="Therapy benefits" style="object-fit:cover" loading="lazy">
+<div class="blog-body">
+<div class="blog-tag">Therapy</div>
+<h3>What to Look for When Choosing a Therapist</h3>
+<p>A guide to finding the right therapeutic fit — from credentials and specialities to personality and approach.</p>
+<div class="blog-meta">April 2026 · 6 min read</div>
+</div>
+</div>
+</div>
+<div style="text-align:center;margin-top:36px">
+<a class="btn btn-outline" href="#">View All Articles</a>
+</div>
+</div>
+</section>
+
+<!-- ===== LOCATION ===== -->
+<section class="section section-alt">
+<div class="container">
+<div class="section-header">
+<div class="tag" style="justify-content:center">Visit Us</div>
+<h2>Our Office in <span class="italic">Montclair</span></h2>
+<p>Conveniently located in the heart of Montclair, our office offers a warm and private space for in-person sessions.</p>
+</div>
+<div class="location-grid">
+<div class="location-images">
+<img src="https://images.squarespace-cdn.com/content/v1/66216f94dfe8723da63df6a2/7b2a1d7a-3db4-41b1-86cb-b283f49f1aaf/IMG_7531.jpeg" alt="Office interior" loading="lazy">
+<img src="https://images.squarespace-cdn.com/content/v1/66216f94dfe8723da63df6a2/72754a70-0032-4ccd-ab54-59f558d26610/priscilla-du-preez-nF8xhLMmg0c-unsplash.jpg" alt="Waiting area" loading="lazy">
+<img src="https://images.squarespace-cdn.com/content/v1/66216f94dfe8723da63df6a2/d8a7fabb-f556-44ff-8b3d-d0cb567d9e28/2024-04-12+%283%29.webp" alt="Therapy room" loading="lazy">
+</div>
+<div class="location-info">
+<h3>Mental Wellness Montclair</h3>
+<p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> 325 Claremont Ave Suite 5, Montclair, NJ 07042</p>
+<p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> (973) 210-7310</p>
+<p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> admin@mentalwellnessmontclair.com</p>
+<div class="location-hours">
+<strong>Office Hours</strong><br><br>
+<p style="font-size:0.88rem"><strong>Monday – Friday:</strong> 8:00 AM – 8:00 PM</p>
+<p style="font-size:0.88rem"><strong>Saturday:</strong> 8:00 AM – 4:00 PM</p>
+<p style="font-size:0.88rem"><strong>Sunday:</strong> 8:00 AM – 7:00 PM</p>
+</div>
+<a class="btn btn-primary" href="https://maps.google.com/?q=325+Claremont+Ave+Suite+5+Montclair+NJ+07042" target="_blank" rel="noopener" style="margin-top:20px">Get Directions</a>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ===== FINAL CTA ===== -->
+<section class="cta-section">
+<div class="container">
+<h2>You Don't Have to <span class="italic">Figure It Out</span> Alone</h2>
+<p>Whether you're seeking therapy, looking for answers through an evaluation, or simply exploring your options, we're here to listen and help.</p>
+<div class="cta-actions">
+<a class="btn btn-primary btn-lg" href="#book">Book Your Appointment</a>
+<a class="btn btn-outline-light btn-lg" href="tel:+19732107310">Call (973) 210-7310</a>
+</div>
+<span class="cta-phone">Free 15-minute consultation — <a href="#book">schedule yours today</a></span>
+</div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer" id="contact">
+<div class="container">
+<div class="footer-inner">
+<div class="footer-brand">
+<img src="https://images.squarespace-cdn.com/content/v1/66216f94dfe8723da63df6a2/674a2555-d4e5-4001-9f84-7f2f434a1167/MentalWellnessMontclair_Final+%281%29_White.png?format=300w" alt="Mental Wellness Montclair" style="height:30px;width:auto;filter:brightness(10);opacity:0.9" onerror="this.style.display='none'">
+<p>Providing compassionate therapy, evaluations, and mental health support for teens, adults, and families in a welcoming and supportive environment.</p>
+<div class="footer-social">
+<a href="#" aria-label="Instagram">IG</a>
+<a href="#" aria-label="Facebook">FB</a>
+<a href="#" aria-label="Google">G</a>
+<a href="#" aria-label="YouTube">YT</a>
+</div>
+</div>
+<div>
+<h4>Navigate</h4>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#about">About Us</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#team">Our Team</a></li>
+<li><a href="#testimonials">Testimonials</a></li>
+<li><a href="#resources">Blog</a></li>
+<li><a href="#">FAQs</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4>Services</h4>
+<ul>
+<li><a href="#">ADHD Evaluations</a></li>
+<li><a href="#">Child Therapy</a></li>
+<li><a href="#">Teen Therapy</a></li>
+<li><a href="#">Anxiety Therapy</a></li>
+<li><a href="#">Couples Therapy</a></li>
+<li><a href="#">Virtual Therapy</a></li>
+<li><a href="#">Therapy for Women</a></li>
+<li><a href="#">Therapy for Men</a></li>
+</ul>
+</div>
+<div>
+<h4>Contact</h4>
+<div class="footer-contact-item">
+<strong>Address</strong>
+325 Claremont Ave Suite 5<br>
+Montclair, NJ 07042
+</div>
+<div class="footer-contact-item">
+<strong>Phone</strong>
+<a href="tel:+19732107310" style="color:#fff">(973) 210-7310</a>
+</div>
+<div class="footer-contact-item">
+<strong>Email</strong>
+<a href="mailto:admin@mentalwellnessmontclair.com" style="color:rgba(255,255,255,0.6)">admin@mentalwellnessmontclair.com</a>
+</div>
+<div class="footer-contact-item">
+<strong>Hours</strong>
+Mon–Fri: 8AM–8PM<br>
+Sat: 8AM–4PM · Sun: 8AM–7PM
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<div>&copy; 2026 Mental Wellness Montclair. All rights reserved.</div>
+<div class="footer-bottom-links">
+<a href="#">Privacy Policy</a>
+<a href="#">Terms of Service</a>
+<a href="#">HIPAA Notice</a>
+<a href="#">Good Faith Estimate</a>
+<a href="#">Nondiscrimination</a>
+</div>
+</div>
+</div>
+</footer>
+
+<script>
+// Mobile menu toggle
+const toggle = document.getElementById('mobileToggle');
+const nav = document.getElementById('mainNav');
+toggle.addEventListener('click', function(){
+nav.classList.toggle('active');
+this.classList.toggle('active');
+});
+nav.querySelectorAll('a').forEach(link => {
+link.addEventListener('click', () => {
+nav.classList.remove('active');
+toggle.classList.remove('active');
+});
+});
+
+// FAQ accordion
+function toggleFAQ(btn) {
+const answer = btn.nextElementSibling;
+const isOpen = answer.classList.contains('open');
+document.querySelectorAll('.faq-answer.open').forEach(a => a.classList.remove('open'));
+document.querySelectorAll('.faq-question.active').forEach(b => b.classList.remove('active'));
+if(!isOpen) {
+answer.classList.add('open');
+btn.classList.add('active');
+}
+}
+</script>
+</body>
+</html>
